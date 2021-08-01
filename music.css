@@ -13,7 +13,7 @@ i{
   margin-top: 20px;
     
 }
-.img .abc{
+.img .img-width{
    width: 100%;
    height: 100%;
    
@@ -21,19 +21,20 @@ i{
    
 }
 body{
-   height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    min-height: 100vh;
+    background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+  }
 .music{
-    position: relative;
     width: 500px;
-    background-color: white;
-    box-shadow: 0px 6px 15px rgb(205, 200, 200);
-    padding: 20px;
-    border-radius: 10px;
-    height: 500px;    
+    padding: 25px 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    background: var(--white);
+    box-shadow: 0px 6px 15px ;
 }
 .top-bar{
     display: flex;
@@ -45,10 +46,9 @@ body{
     cursor: pointer;
 }
 .control{
-    position: absolute;
+    padding-top: 20px;
     width: 460px;
-    bottom: 20px;
-    display: flex;
+     display: flex;
     justify-content: space-between;    
 }
 .song{
@@ -69,11 +69,12 @@ body{
 }
 .progress-bar{
     height: 100%;
-    background-color: lawngreen;
+    background-color:rgb(71, 138, 4);
     cursor: pointer;
-    width: 60%;
+   
     
 }
+
 .end{
     position: absolute;
     right: 20px;
@@ -89,4 +90,41 @@ body{
     width: 50px;
     height: 50px;
     background-color:pink;
+}
+.music-list{
+    position: absolute;
+    bottom: -55%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 20px 0px 20px;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
+    transition: all 0.15s ease-out;
+    background-color: white;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+}
+.music-list > div{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  justify-content: space-between;
+  
+}
+.music-list ul{
+    max-height: 300px;
+    overflow-y: auto;
+}
+.music-list ul::-webkit-scrollbar{
+    width: 0px;
+    
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    padding:10px 0 20px 0;
+    border-bottom: 1px solid #e5e5e5;
 }

@@ -14,38 +14,67 @@
 </head>
 
 <body>
-    <div class="music">
+  <div class="music">
         <div class="top-bar">
             <div class="expand"><i class="fas fa-chevron-down"></i></div>
             <div class="playing">Now playing</div>
             <div class="option"><i class="fas fa-ellipsis-h"></i></div>
         </div>
         <div class="img">
-           <img class="abc" src="asset/music/1/dims.jpg" alt="">
+            <img class="img-width" src="asset/music/1/img1.jpg" alt="">
         </div>
         <div class="song">
-            <div class="name">ABC </div>
-            <div class="artist">DEF</div>
+            <audio class="my-audio">
+               
+            </audio>
+            <div class="song-name"></div>
+            <div class="artist"></div>
         </div>
         <div class="progress">
             <div class="progress-bar">
-                <audio id="main-audio" src="asset/music/1/song1.mp3"></audio>
+               
             </div>
             <span class="start">0:00</span>
-            <span class="end">4:00</span>
+            <span class="end"></span>
         </div>
         <div class="control">
-            <div class="repaly"><i class="fas fa-retweet"></i></div>
+            <div class="replay"><i class="fas fa-retweet"></i></div>
             <div class="previous"><i class="fas fa-backward"></i></i></div>
-            <div class="play-pause">
-                <div class="play">
-                    <i class="fas fa-play"></i>
-                </div>
-             </div>
+            <button class="play-pause" >
+               
+                   
+                
+            </button>
+            
             <div class="next"><i class="fas fa-forward"></i></div>
             <div class="more-songs"><i class="fas fa-list-ul"></i></div>
+    
+            
         </div>
-    </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="fas fa-list-ul"></i>
+                    <span>Music list</span>
+                </div>
+                <div class="close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    
+                    <div class="row">
+                        <span>ABCDEF </span>
+                        <p>MNQ</p>
+                    </div>                  
+                </li>
+            
+               
+            </ul>
+        </div>
+    </div> 
+    <script src="music.js"></script>
 </body>
 
 </html>
