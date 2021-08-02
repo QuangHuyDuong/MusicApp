@@ -66,11 +66,16 @@ body{
 .progress{
     height: 6px;
     border: 1px black solid ;
+    cursor: pointer;
+}
+.progress .start,.progress .end{
+    cursor: initial;
 }
 .progress-bar{
+    
     height: 100%;
     background-color:rgb(71, 138, 4);
-    cursor: pointer;
+ 
    
     
 }
