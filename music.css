@@ -107,9 +107,12 @@ body{
     box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
     transition: all 0.15s ease-out;
     background-color: white;
-    z-index: 10;
+    z-index: 200;
     opacity: 0;
     pointer-events: none;
+}
+.close{
+    cursor: pointer;
 }
 .music-list > div{
     padding-top: 20px;
@@ -119,6 +122,7 @@ body{
   justify-content: space-between;
   
 }
+
 .music-list ul{
     max-height: 300px;
     overflow-y: auto;
